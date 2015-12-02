@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Building Lucene Indexes Using Hadoop - Warcbase Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Warcbase Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="..">Summary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apache Spark <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Spark-Analysis-of-Site-Link-Structure/">Analysis of Site Link Structure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Collection-Analytics/">Collection Analytics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Extracting-Domain-Level-Plain-Text/">Extracting Domain Level Plain Text</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Named-Entity-Recognition/">Named Entity Recognition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-Installing-Spark-Notebook-on-a-Cloud-Computer/">Installing Spark Notebook on a Cloud Computer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-NER-Visualization/">NER Visualization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Web-Archives-2015:-Playing-with-Spark/">Web Archives 2015: Playing with Spark</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation and Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Ingesting-Content-into-HBase/">Ingesting Content into HBase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Installing-and-Running-Spark-under-OS-X/">Installing and Running Spark under OS X</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Warcbase <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Warcbase-Wayback-Integration/">Warcbase Wayback Integration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Warcbase-Java-Tools/">Warcbase Java Tools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Shine:-Installing-Shine-Frontend-on-OS-X/">Shine: Installing Shine Frontend on OS X</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Building Lucene Indexes Using Hadoop</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">Gephi: Converting Site Link Structure into Dynamic Visualization</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../Shine:-Installing-Shine-Frontend-on-OS-X/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Building-and-Running-Warcbase-Under-OS-X/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/lintool/warcbase-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Warcbase integrates with the UK web archive's <a href="https://github.com/ukwa/webarchive-discovery">WARC indexer</a> and Hadoop-related tools to build Lucene indexes using Hadoop. The command-line invocation is as follows:</p>
+<pre><code>hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar org.warcbase.index.IndexerRunner \
+  -input cpp-all-files.txt -index cpp-all-index -numShards 200
+</code></pre>
+
+<p>The file specified by <code>-input</code> is a file on local disk that lists the WARC and ARC files to be indexed. It should be a plain-text file, one (W)ARC file per line, something like:</p>
+<pre><code>/collections/webarchives/CanadianPoliticalParties/arc/227-20051004191331-00000-crawling015.archive.org.arc.gz
+/collections/webarchives/CanadianPoliticalParties/arc/227-20051004192151-00001-crawling015.archive.org.arc.gz
+/collections/webarchives/CanadianPoliticalParties/arc/227-20051004192747-00002-crawling015.archive.org.arc.gz
+...
+</code></pre>
+
+<p>The option <code>-index</code> specifies the location on HDFS where the index will be built. The option <code>-numShards</code> specifies the number of shards. Indexing speed is affected by the number of shards: the more shards, the more parallelization, hence faster. But the downside is that you'll have to do shard merging later (more below). Another issue to consider is memory usage: too few shards, the shards get too big, and you'll run out of memory in your reducers.</p>
+<p>After the job completes, in `cpp-all-index/' on HDFS, you'll see 200 sub-directories, one for each shard. If you want to use Shine to search these indexes, the next thing we have to do is to merge all the shards into one unified index.</p>
+<p>To merge the shards, you'll need to copy the shards out of HDFS, and then use the following Lucene tool:</p>
+<pre><code>java -cp lucene-core-4.7.2.jar:lucene-misc-4.7.2.jar \
+  org.apache.lucene.misc.IndexMergeTool [merged-index] [shard1] [shard2] ...
+</code></pre>
+
+<p>You can get the above jars from Maven central:
+<a href="http://search.maven.org/remotecontent?filepath=org/apache/lucene/lucene-core/4.7.2/lucene-core-4.7.2.jar"><code>lucene-core-4.7.2.jar</code></a> and
+<a href="http://search.maven.org/remotecontent?filepath=org/apache/lucene/lucene-misc/4.7.2/lucene-misc-4.7.2.jar"><code>lucene-misc-4.7.2.jar</code></a></p>
+<p>You might want to write a simple script to generate the right command. In the case of the index above, the complete merging command is:</p>
+<pre><code>nohup java -cp lucene-core-4.7.2.jar:lucene-misc-4.7.2.jar org.apache.lucene.misc.IndexMergeTool cpp-index \
+  shard1/data/index shard2/data/index shard3/data/index shard4/data/index shard5/data/index \
+  shard6/data/index shard7/data/index shard8/data/index shard9/data/index shard10/data/index \
+  shard11/data/index shard12/data/index shard13/data/index shard14/data/index shard15/data/index \
+  shard16/data/index shard17/data/index shard18/data/index shard19/data/index shard20/data/index \
+  shard21/data/index shard22/data/index shard23/data/index shard24/data/index shard25/data/index \
+  shard26/data/index shard27/data/index shard28/data/index shard29/data/index shard30/data/index \
+  shard31/data/index shard32/data/index shard33/data/index shard34/data/index shard35/data/index \
+  shard36/data/index shard37/data/index shard38/data/index shard39/data/index shard40/data/index \
+  shard41/data/index shard42/data/index shard43/data/index shard44/data/index shard45/data/index \
+  shard46/data/index shard47/data/index shard48/data/index shard49/data/index shard50/data/index \
+  shard51/data/index shard52/data/index shard53/data/index shard54/data/index shard55/data/index \
+  shard56/data/index shard57/data/index shard58/data/index shard59/data/index shard60/data/index \
+  shard61/data/index shard62/data/index shard63/data/index shard64/data/index shard65/data/index \
+  shard66/data/index shard67/data/index shard68/data/index shard69/data/index shard70/data/index \
+  shard71/data/index shard72/data/index shard73/data/index shard74/data/index shard75/data/index \
+  shard76/data/index shard77/data/index shard78/data/index shard79/data/index shard80/data/index \
+  shard81/data/index shard82/data/index shard83/data/index shard84/data/index shard85/data/index \
+  shard86/data/index shard87/data/index shard88/data/index shard89/data/index shard90/data/index \
+  shard91/data/index shard92/data/index shard93/data/index shard94/data/index shard95/data/index \
+  shard96/data/index shard97/data/index shard98/data/index shard99/data/index shard100/data/index \
+  shard101/data/index shard102/data/index shard103/data/index shard104/data/index shard105/data/index \
+  shard106/data/index shard107/data/index shard108/data/index shard109/data/index shard110/data/index \
+  shard111/data/index shard112/data/index shard113/data/index shard114/data/index shard115/data/index \
+  shard116/data/index shard117/data/index shard118/data/index shard119/data/index shard120/data/index \
+  shard121/data/index shard122/data/index shard123/data/index shard124/data/index shard125/data/index \
+  shard126/data/index shard127/data/index shard128/data/index shard129/data/index shard130/data/index \
+  shard131/data/index shard132/data/index shard133/data/index shard134/data/index shard135/data/index \
+  shard136/data/index shard137/data/index shard138/data/index shard139/data/index shard140/data/index \
+  shard141/data/index shard142/data/index shard143/data/index shard144/data/index shard145/data/index \
+  shard146/data/index shard147/data/index shard148/data/index shard149/data/index shard150/data/index \
+  shard151/data/index shard152/data/index shard153/data/index shard154/data/index shard155/data/index \
+  shard156/data/index shard157/data/index shard158/data/index shard159/data/index shard160/data/index \
+  shard161/data/index shard162/data/index shard163/data/index shard164/data/index shard165/data/index \
+  shard166/data/index shard167/data/index shard168/data/index shard169/data/index shard170/data/index \
+  shard171/data/index shard172/data/index shard173/data/index shard174/data/index shard175/data/index \
+  shard176/data/index shard177/data/index shard178/data/index shard179/data/index shard180/data/index \
+  shard181/data/index shard182/data/index shard183/data/index shard184/data/index shard185/data/index \
+  shard186/data/index shard187/data/index shard188/data/index shard189/data/index shard190/data/index \
+  shard191/data/index shard192/data/index shard193/data/index shard194/data/index shard195/data/index \
+  shard196/data/index shard197/data/index shard198/data/index shard199/data/index shard200/data/index &gt;&amp; log.txt &amp;
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

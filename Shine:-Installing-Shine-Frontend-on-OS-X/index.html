@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Shine: Installing Shine Frontend on OS X - Warcbase Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Warcbase Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="..">Summary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apache Spark <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Spark-Analysis-of-Site-Link-Structure/">Analysis of Site Link Structure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Collection-Analytics/">Collection Analytics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Extracting-Domain-Level-Plain-Text/">Extracting Domain Level Plain Text</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Named-Entity-Recognition/">Named Entity Recognition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-Installing-Spark-Notebook-on-a-Cloud-Computer/">Installing Spark Notebook on a Cloud Computer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-NER-Visualization/">NER Visualization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Web-Archives-2015:-Playing-with-Spark/">Web Archives 2015: Playing with Spark</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation and Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Ingesting-Content-into-HBase/">Ingesting Content into HBase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Installing-and-Running-Spark-under-OS-X/">Installing and Running Spark under OS X</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Warcbase <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Warcbase-Wayback-Integration/">Warcbase Wayback Integration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Warcbase-Java-Tools/">Warcbase Java Tools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Shine: Installing Shine Frontend on OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-Lucene-Indexes-Using-Hadoop/">Building Lucene Indexes Using Hadoop</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">Gephi: Converting Site Link Structure into Dynamic Visualization</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../Warcbase-Java-Tools/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Building-Lucene-Indexes-Using-Hadoop/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/lintool/warcbase-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#setting-up-uk-web-archives-shine-on-os-x">Setting up UK Web Archive's Shine on OS X</a></li>
+        
+            <li><a href="#step-one-setting-up-webarchive-discovery">Step One: Setting up WebArchive-Discovery</a></li>
+        
+            <li><a href="#step-two-setting-up-shine">Step Two: Setting up shine</a></li>
+        
+            <li><a href="#step-three-use-shine">Step Three: Use Shine</a></li>
+        
+            <li><a href="#notes">Notes</a></li>
+        
+            <li><a href="#questions">Questions?</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="setting-up-uk-web-archives-shine-on-os-x">Setting up UK Web Archive's Shine on OS X</h1>
+<p><strong>Shawn Dickinson and Ian Milligan (Web Archives for Historical Research Group)</strong><br />
+<strong>Tested by David Hussey</strong></p>
+<p>Do you have a lot of WARCs that you want to discover? The <a href="https://github.com/ukwa/shine">UK Web Archive's Shine browser</a> is a "Prototype SOLR-powered web archive exploration UI." It's perfect for what historians might want to do with WARCs. This is an attempt at an easy-to-understand walkthrough to harness the power of Shine for your own collections. If you have any questions, don't hestiate to contact us via Ian at <a href="../i2millig@uwaterloo.ca">i2millig@uwaterloo.ca</a>. </p>
+<p>Check out Shine in action below:</p>
+<p><img alt="Shine in action" src="https://raw.githubusercontent.com/ianmilligan1/WAHR/master/images/screenshot1.png" /></p>
+<h2 id="step-one-setting-up-webarchive-discovery">Step One: Setting up WebArchive-Discovery</h2>
+<p>Adapted from https://github.com/ukwa/webarchive-discovery/wiki. </p>
+<p>Dependencies:
+- <a href="http://brew.sh">Brew</a> (follow the link to install brew, a hpandy package manager for OS X)
+- Java 1.7 or higher
+- Maven (<code>brew install maven</code>)
+- Git (<code>brew install git</code>)</p>
+<p><strong>Clone webarchive-discovery</strong></p>
+<p>In the directory where you want to install it, use:</p>
+<p><code>git clone https://github.com/ukwa/webarchive-discovery.git</code></p>
+<p>Recursively cloning makes sure it includes submodules, such as bootstrap.</p>
+<p><strong>Build</strong></p>
+<p><code>cd webarchive-discovery/warc-solr-test-server</code></p>
+<p><code>mvn jetty:run-exploded</code></p>
+<p>This will initialize the solr test server. Keep it running.</p>
+<p><strong>Set up the WARC Ingestor</strong></p>
+<p>You will need to download the JAR, suggested by the wiki and available <a href="https://oss.sonatype.org/content/repositories/snapshots/uk/bl/wa/discovery/warc-indexer/2.0.1-SNAPSHOT/">here</a> and place it in the correct folder. We downloaded <code>warc-indexer-2.0.1-SNAPSHOT-jar-with-dependencies.jar</code>. Direct link for curl/wget is: <a href="https://oss.sonatype.org/content/repositories/snapshots/uk/bl/wa/discovery/warc-indexer/2.0.1-SNAPSHOT/warc-indexer-2.0.1-20150116.110435-2-jar-with-dependencies.jar">https://oss.sonatype.org/content/repositories/snapshots/uk/bl/wa/discovery/warc-indexer/2.0.1-SNAPSHOT/warc-indexer-2.0.1-20150116.110435-2-jar-with-dependencies.jar</a></p>
+<p><em>For example data:</em> Run the below command, replacing SNAPSHOT with the correct snapshot id from the file that was downloaded.</p>
+<pre><code>java -jar warc-indexer-2.0.1-SNAPSHOT-jar-with-dependencies.jar  -s http://localhost:8080/discovery -t warc-indexer/src/test/resources/wikipedia-mona-lisa/flashfrozen-jwat-recompressed.warc.gz
+</code></pre>
+
+<p><em>For own data:</em> you can point it to whatever directory your warc.gz or arc.gz files are, a la:</p>
+<pre><code>java -jar warc-indexer-2.0.1-20150116.110435-2-jar-with-dependencies.jar -s http://localhost:8080/discovery -t /Users/ianmilligan1/dropbox/sample-WARCs/*.warc.gz
+</code></pre>
+
+<p>This may throw lots of errors, as ill-formed HTML causes issues - i.e. "img" must be terminated by the matching end-tag "</img>". when using wild web data, this causes trouble. You can monitor progress in both this widow, as well as the previous one you have running the solr-test server. You'll see some interesting artefacts.</p>
+<p>If you're ingesting a lot of ARCs/WARCs, you may want to run a quick bash script a la (you will of course need to change the directory where you have the indexer-jar):</p>
+<pre><code>#!/bin/bash
+# ingest-script.sh
+# run in directory with WARCs on local node, headless prevents focus stealing (will drive you crazy)
+
+for f in *.warc.gz # if using arcs change to *.arc.gz or if both *.gz
+do
+    echo &quot;Processing $f&quot;
+    java -Djava.awt.headless=true -jar /volumes/WAHR-SolrTest/webarchive-discovery/warc-indexer-2.0.1-20150116.110435-2-jar-with-dependencies.jar -s http://localhost:8080/discovery -t $f
+done
+</code></pre>
+
+<h2 id="step-two-setting-up-shine">Step Two: Setting up shine</h2>
+<p>Dependencies:
+- Typesafe Activator (<code>brew install typesafe-activator</code>)
+- Postgres (<code>brew install postgres</code>)</p>
+<p>First, clone the shine repo with the following command:</p>
+<pre><code>git clone --recursive https://github.com/ukwa/shine.git
+</code></pre>
+
+<p><strong>Play framework</strong></p>
+<p>Note that the play framework was replaced with typesafe-activator. From here on replace any <code>play</code> commands that you might find in other documentation with <code>activator</code>.</p>
+<p>Initialize shine by <code>cd shine/shine</code> and <code>activator run</code></p>
+<p>On the default installation, the "random results" on the Trend page won't work. If you change line 180 of <code>/shine/shine/app/controllers/Shiner.java</code> from <code>random_12</code> to the actual field name of <code>id</code>, the issue will work. The new code block shoudl look like in part:</p>
+<pre><code>// Grab the baseline data:
+params.put(&quot;sort&quot;,Arrays.asList(new String[] { &quot;id&quot; } ));
+params.put(&quot;facet.in.crawl_years&quot;, Arrays.asList(new String[] { year } ));
+Query sample = new Query(query,params);
+// Do the search:
+sample = solr.search(sample,100);
+</code></pre>
+
+<p><strong>Postgresql</strong></p>
+<p>Initialize the Postgres server by running <code>pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start</code>. You can also manually stop the server at any time with <code>pg_ctl -D /usr/local/var/postgres stop -s -m fast</code>. </p>
+<p>If you want to monitor activity, the command <code>postgres -D /usr/local/var/postgres</code> will let you. This should run in the background (you will need to open a new terminal window as this will continue). </p>
+<p>When starting this for the first time, you will also have to use the following commands:</p>
+<p><code>createuser -P shine</code> and enter a password for the user (this creates a db user with the name "shine" and your given password). Note that if you use a special character (such as !) in your password, you will need to enclose it with double quotation marks.</p>
+<p><code>createdb -O shine shine</code> (this creates a db named "shine" with the user "shine" as its owner).</p>
+<p>In <code>shine/shine/conf/application.conf</code> make the following changes. Comment out line 92 and uncomment line 93, so the host section looks like:</p>
+<pre><code>#host = &quot;http://192.168.1.204:8983/solr/ldwa/&quot;,
+#host = &quot;http://192.168.45.220:8983/solr/ldwadev/&quot;,
+#host = &quot;http://192.168.1.151:8984/solr/jisc/&quot;,
+#host = &quot;http://192.168.1.181:8983/solr/jisc5&quot;,
+host = &quot;http://localhost:8080/discovery/&quot;,
+#host = &quot;http://chrome.bl.uk:8080/solr/&quot;
+</code></pre>
+
+<p>On line 47, replace the default password with the password you previously created for the db user. The code block should look like:</p>
+<pre><code>#db.default.logStatements=true
+db.default.driver=org.postgresql.Driver
+db.default.url=&quot;jdbc:postgresql://localhost/shine&quot;
+db.default.user=shine
+db.default.password=yourpassword
+</code></pre>
+
+<p>Where yourpassword is the password you generated with the <code>createuser</code> command.</p>
+<p>Opening shine in the browser (http://localhost:9000), you should have a button to "Apply this script now!" -- click it and run the setup SQL scripts</p>
+<h2 id="step-three-use-shine">Step Three: Use Shine</h2>
+<p>Navigate to <a href="http://localhost:9000/shine">http://localhost:9000/shine</a> to begin using. Note that simply using http://localhost:9000/ will lead to errors. </p>
+<p>If in the future, you want to re-active it, you can use this collection of easy-to-use scripts here: <a href="https://github.com/ianmilligan1/WAHR/tree/master/scripts/shine">https://github.com/ianmilligan1/WAHR/tree/master/scripts/shine</a>. Simply download the files, give them privileges with <code>chmod +x shine-execute-on.sh</code> and <code>chmod +x solr-execute-on.sh</code> and then run <code>execute.sh</code>. It will launch two terminal windows for the application to run.</p>
+<h2 id="notes">Notes</h2>
+<h3 id="solr-indexing-heap-space-issues">Solr Indexing Heap Space Issues</h3>
+<p>If the Solr index grows too large (mine is about 80GB), you may need to pass some more memory parameters to get it running on some machines. On a laptop with 16GB of memory, this command did the trick when initializing the server:</p>
+<pre><code>MAVEN_OPTS='-Xmx12g -Xms1g -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+UseConcMarkSweepGC -XX:ParallelGCThreads=4' mvn jetty:run-exploded
+</code></pre>
+
+<p>Thanks to @ruebot, @anjackson, @tokee.</p>
+<h3 id="default-search-query">Default Search Query</h3>
+<p>By default, the query will be "big data" between 1996 and 2010. You might want to change that for your collections. To do so, open: <code>shine/shine/target/scala-2.10/src_managed/main/routes_routing.scala</code> and change the default query on line 280. i.e. mine now reads:</p>
+<pre><code>// @LINE:28
+case controllers_Search_plot_graph10(params) =&gt; {
+   call(params.fromQuery[String](&quot;query&quot;, Some(&quot;recession,depression&quot;)), params.fromQuery[String](&quot;year_start&quot;, Some(&quot;2005&quot;)), params.fromQuery[String](&quot;year_end&quot;, Some(&quot;2015&quot;))) { (query, year_start, year_end) =&gt;
+        invokeHandler(controllers.Search.plot_graph(query, year_start, year_end), HandlerDef(this, &quot;controllers.Search&quot;, &quot;plot_graph&quot;, Seq(classOf[String], classOf[String], classOf[String]),&quot;GET&quot;, &quot;&quot;&quot;&quot;&quot;&quot;, Routes.prefix + &quot;&quot;&quot;graph&quot;&quot;&quot;))
+   }
+}
+</code></pre>
+
+<h2 id="questions">Questions?</h2>
+<p>If you run into any questions, please let us know. You can contact Ian Milligan at <a href="../&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#50;&#109;&#105;&#108;&#108;&#105;&#103;&#64;&#117;&#119;&#97;&#116;&#101;&#114;&#108;&#111;&#111;&#46;&#99;&#97;">&#105;&#50;&#109;&#105;&#108;&#108;&#105;&#103;&#64;&#117;&#119;&#97;&#116;&#101;&#114;&#108;&#111;&#111;&#46;&#99;&#97;</a>, or fork and submit a pull request.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

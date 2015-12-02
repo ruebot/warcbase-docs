@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Installing and Running Spark under OS X - Warcbase Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Warcbase Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="..">Summary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apache Spark <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Spark-Analysis-of-Site-Link-Structure/">Analysis of Site Link Structure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Collection-Analytics/">Collection Analytics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Extracting-Domain-Level-Plain-Text/">Extracting Domain Level Plain Text</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Named-Entity-Recognition/">Named Entity Recognition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-Installing-Spark-Notebook-on-a-Cloud-Computer/">Installing Spark Notebook on a Cloud Computer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-NER-Visualization/">NER Visualization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Web-Archives-2015:-Playing-with-Spark/">Web Archives 2015: Playing with Spark</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation and Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Ingesting-Content-into-HBase/">Ingesting Content into HBase</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Installing and Running Spark under OS X</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Warcbase <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Warcbase-Wayback-Integration/">Warcbase Wayback Integration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Warcbase-Java-Tools/">Warcbase Java Tools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Shine:-Installing-Shine-Frontend-on-OS-X/">Shine: Installing Shine Frontend on OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-Lucene-Indexes-Using-Hadoop/">Building Lucene Indexes Using Hadoop</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">Gephi: Converting Site Link Structure into Dynamic Visualization</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../Ingesting-Content-into-HBase/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Warcbase-Wayback-Integration/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/lintool/warcbase-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#spark-integration">Spark integration</a></li>
+        
+            <li><a href="#prerequisites">Prerequisites</a></li>
+        
+            <li><a href="#fluent-api">Fluent API</a></li>
+        
+    
+        <li class="main "><a href="#running-in-the-spark-shell">Running in the Spark Shell</a></li>
+        
+    
+        <li class="main "><a href="#running-with-spark-notebook">Running with Spark Notebook</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h3 id="spark-integration">Spark integration</h3>
+<p>Warcbase comes with Spark integration for manipulating web archive data. </p>
+<h4 id="prerequisites">Prerequisites</h4>
+<ul>
+<li>Scala (<code>brew install scala</code>)</li>
+<li>Spark (<code>brew install apache-spark</code>)</li>
+</ul>
+<h4 id="fluent-api">Fluent API</h4>
+<p>A fluent API is being developed for RDDs, and is now available on master.</p>
+<p>To use the API, two imports are required (run within Spark shell):    </p>
+<pre><code>import org.warcbase.spark.rdd.RecordRDD._
+import org.warcbase.spark.matchbox.RecordLoader
+</code></pre>
+
+<h3 id="running-in-the-spark-shell">Running in the Spark Shell</h3>
+<p>To run the spark shell, cd into the warcbase directory and run: <br />
+<code>spark-shell --jars target/warcbase-0.1.0-SNAPSHOT-fatjar.jar</code></p>
+<p>By default, command in spark-shell must be one-line.<br />
+To run multi-line commands, type <code>:paste</code> in Spark shell to start a multi-line command, and Ctrl-D to finish the command.</p>
+<p>The following script counts web pages by time:  </p>
+<pre><code>import org.warcbase.spark.rdd.RecordRDD._
+import org.warcbase.spark.matchbox.RecordLoader
+
+val counts = RecordLoader.loadArc(&quot;/shared/collections/CanadianPoliticalParties/arc/&quot;)
+  .keepValidPages
+  .map(r =&gt; r.getDate)
+  .countItems()
+  .saveAsTextFile(&quot;path/to/output&quot;)
+</code></pre>
+
+<p>In the output directory you should find data output files with date and count.</p>
+<h3 id="running-with-spark-notebook">Running with Spark Notebook</h3>
+<p>Spark Notebook is an interactive web-based editor that can run Scala and Spark. </p>
+<p>To use Spark Notebook with Warcbase, download the <a href="http://spark-notebook.io/">notebook</a> with Scala 2.10, Spark 1.3.0, and Hadoop 2.6.0-cdh5.4.2. 
+Also <a href="https://github.com/lintool/warcbase/wiki/Building-and-Running-Warcbase-Under-OS-X#building-warcbase">build</a> Warcbase if you have not already done so.</p>
+<p>Then unzip the downloaded Spark Notebook file, cd into the directory, and run <code>./bin/spark-notebook</code>.</p>
+<p>The terminal should say: <code>Listening for HTTP on /0:0:0:0:0:0:0:0:9000</code></p>
+<p>Then navigate to <code>http://localhost:9000/</code> in your browser.</p>
+<p>To make a new notebook, click the '+' button on the top right-hand corner.</p>
+<p>In that notebook, enter <code>:cp /path/to/warcbase/jar</code> as the first command to load Warcbase. Now you have an interactive Spark shell running Warcbase!</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Ingesting Content into HBase - Warcbase Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Warcbase Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="..">Summary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apache Spark <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Spark-Analysis-of-Site-Link-Structure/">Analysis of Site Link Structure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Collection-Analytics/">Collection Analytics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Extracting-Domain-Level-Plain-Text/">Extracting Domain Level Plain Text</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Named-Entity-Recognition/">Named Entity Recognition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-Installing-Spark-Notebook-on-a-Cloud-Computer/">Installing Spark Notebook on a Cloud Computer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-NER-Visualization/">NER Visualization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Web-Archives-2015:-Playing-with-Spark/">Web Archives 2015: Playing with Spark</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation and Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Ingesting Content into HBase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Installing-and-Running-Spark-under-OS-X/">Installing and Running Spark under OS X</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Warcbase <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Warcbase-Wayback-Integration/">Warcbase Wayback Integration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Warcbase-Java-Tools/">Warcbase Java Tools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Shine:-Installing-Shine-Frontend-on-OS-X/">Shine: Installing Shine Frontend on OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-Lucene-Indexes-Using-Hadoop/">Building Lucene Indexes Using Hadoop</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">Gephi: Converting Site Link Structure into Dynamic Visualization</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../Building-and-Running-Warcbase-Under-OS-X/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Installing-and-Running-Spark-under-OS-X/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/lintool/warcbase-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>You can find some sample data <a href="https://archive.org/details/ExampleArcAndWarcFiles">here</a>. Ingesting data into Warcbase is fairly straightforward:</p>
+<pre><code>$ setenv CLASSPATH_PREFIX &quot;/etc/hbase/conf/&quot;
+$ sh target/appassembler/bin/IngestFiles \
+    -dir /path/to/warc/dir/ -name archive_name -create
+</code></pre>
+
+<p>Command-line options:</p>
+<ul>
+<li>Use the <code>-dir</code> option to specify the directory containing the data files.</li>
+<li>Use the <code>-name</code> option to specify the name of the archive (will correspond to the HBase table name).</li>
+<li>Use the <code>-create</code> option to create a new table (and drop the existing table if a table with the same name exists already). Alternatively, use <code>-append</code> to add to an existing table.</li>
+</ul>
+<p>An example on one OS X machine:</p>
+<pre><code>$ export CLASSPATH_PREFIX=&quot;/usr/local/Cellar/hbase/0.98.6.1/libexec/conf/&quot;
+$ sh target/appassembler/bin/IngestFiles -dir ~/desktop/WARC-directory/ -name webarchives1 -create -gz
+</code></pre>
+
+<p>That should do it. The data should now be in Warcbase.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

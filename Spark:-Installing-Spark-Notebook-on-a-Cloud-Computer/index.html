@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Installing Spark Notebook on a Cloud Computer - Warcbase Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Warcbase Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="..">Summary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apache Spark <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Spark-Analysis-of-Site-Link-Structure/">Analysis of Site Link Structure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Collection-Analytics/">Collection Analytics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Extracting-Domain-Level-Plain-Text/">Extracting Domain Level Plain Text</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Named-Entity-Recognition/">Named Entity Recognition</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Installing Spark Notebook on a Cloud Computer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-NER-Visualization/">NER Visualization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Web-Archives-2015:-Playing-with-Spark/">Web Archives 2015: Playing with Spark</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation and Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Ingesting-Content-into-HBase/">Ingesting Content into HBase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Installing-and-Running-Spark-under-OS-X/">Installing and Running Spark under OS X</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Warcbase <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Warcbase-Wayback-Integration/">Warcbase Wayback Integration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Warcbase-Java-Tools/">Warcbase Java Tools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Shine:-Installing-Shine-Frontend-on-OS-X/">Shine: Installing Shine Frontend on OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-Lucene-Indexes-Using-Hadoop/">Building Lucene Indexes Using Hadoop</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-and-Running-Warcbase-Under-OS-X/">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">Gephi: Converting Site Link Structure into Dynamic Visualization</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../Spark-Named-Entity-Recognition/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Spark:-NER-Visualization/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/lintool/warcbase-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#step-one-ssh-to-the-server">Step One: SSH to the server</a></li>
+        
+    
+        <li class="main "><a href="#step-two-install-dependencies">Step Two: Install dependencies</a></li>
+        
+    
+        <li class="main "><a href="#step-three-set-up-the-server-properly">Step Three: Set up the server properly</a></li>
+        
+    
+        <li class="main "><a href="#step-four-install-spark">Step Four: Install Spark</a></li>
+        
+    
+        <li class="main "><a href="#step-five-install-warcbase">Step Five: Install Warcbase</a></li>
+        
+    
+        <li class="main "><a href="#step-six-test-that-warcbase-and-spark-are-working">Step Six: Test that Warcbase and Spark are working</a></li>
+        
+    
+        <li class="main "><a href="#step-seven-getting-the-spark-notebook-working">Step Seven: Getting the Spark Notebook working</a></li>
+        
+    
+        <li class="main "><a href="#step-eight-deployment">Step Eight: Deployment</a></li>
+        
+    
+        <li class="main "><a href="#step-nine-tweaking">Step Nine: Tweaking</a></li>
+        
+    
+        <li class="main "><a href="#step-ten-have-fun">Step Ten: Have Fun</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This is a walkthrough for installing Warcbase and Spark on a Ubuntu_14.04_Trusty x86_64 (QCOW2) image provided for Compute Canada. Presumably Amazon EC2 would provide a similar sort of experience. For more information on Warcbase, <a href="https://github.com/lintool/warcbase">check out the repository here</a>.</p>
+<p>It is a bit bare boned as it assumes some knowledge of a command line environment.</p>
+<h3 id="step-one-ssh-to-the-server">Step One: SSH to the server</h3>
+<ul>
+<li>For me on a Compute Canada instance, it's <code>ssh -i macpro.key ubuntu@IPADDRESS</code>.</li>
+</ul>
+<h3 id="step-two-install-dependencies">Step Two: Install dependencies</h3>
+<ul>
+<li><code>sudo apt-get update</code></li>
+<li><code>sudo apt-get install htop</code></li>
+<li><code>sudo apt-get install git</code></li>
+<li><code>sudo apt-get install maven</code></li>
+<li><code>sudo apt-get install scala</code></li>
+<li><code>export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64</code></li>
+<li><code>sudo apt-get install openjdk-7-jdk</code></li>
+</ul>
+<h3 id="step-three-set-up-the-server-properly">Step Three: Set up the server properly</h3>
+<ul>
+<li>type <code>echo $HOSTNAME</code></li>
+<li>try <code>ping $HOSTNAME</code>: if it responds with something like <code>ping: unknown host milligan-wahr-05</code> you need to add an entry to your <code>/etc/hosts</code> file</li>
+<li><code>sudo vim /etc/hosts</code></li>
+<li>replace the <code>localhost</code> entry with your hostname - in my case, the first line now reads: <code>127.0.0.1 milligan-wahr-05</code></li>
+<li>now try to <code>ping $HOSTNAME</code>: if you begin to see packet transmission/receipt information, you're golden.</li>
+</ul>
+<h3 id="step-four-install-spark">Step Four: Install Spark</h3>
+<ul>
+<li>download spark 1.5.1 from <a href="http://spark.apache.org/downloads.html">here</a>. I used <a href="http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop2.6.tgz">this version for direct download</a>.<ul>
+<li>for the lazier among us: <code>wget http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop2.6.tgz</code></li>
+<li><code>tar -xvf spark-1.5.1-bin-hadoop2.6.tgz</code></li>
+<li>remove the tar file: <code>rm spark-1.5.1-bin-hadoop2.6.tgz</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="step-five-install-warcbase">Step Five: Install Warcbase</h3>
+<ul>
+<li>bring yourself back to your home directory: <code>cd --</code></li>
+<li>download warcbase: <code>git clone https://github.com/lintool/warcbase.git</code></li>
+<li>change to the warcbase directory: <code>cd warcbase</code></li>
+<li>build warcbase: <code>mvn clean package appassembler:assemble -DskipTests</code></li>
+</ul>
+<h3 id="step-six-test-that-warcbase-and-spark-are-working">Step Six: Test that Warcbase and Spark are working</h3>
+<ul>
+<li>verify that the shell works by navigating to your spark-shell directory and running: <code>./bin/spark-shell</code></li>
+<li>if you don't get a bunch of errors, try: <code>./bin/spark-shell --jars /home/ubuntu/warcbase/target/warcbase-0.1.0-SNAPSHOT-fatjar.jar</code> to initalize warcbase</li>
+<li>Try this following script. In order to paste code, type <code>paste</code> and then Ctrl+D when you finish it up.</li>
+</ul>
+<pre><code>val r = RecordLoader.loadArc(&quot;/home/ubuntu/warcbase/src/test/resources/arc/example.arc.gz&quot;, sc)
+  .keepValidPages()
+  .map(r =&gt; ExtractTopLevelDomain(r.getUrl))
+  .countItems()
+  .take(10)
+</code></pre>
+
+<p>If you receive the following output:</p>
+<pre><code>r: Array[(String, Int)] = Array((www.archive.org,132), (deadlists.com,2), (www.hideout.com.br,1))
+</code></pre>
+
+<p>Then you're working.</p>
+<h3 id="step-seven-getting-the-spark-notebook-working">Step Seven: Getting the Spark Notebook working</h3>
+<ul>
+<li>download it with this command: <code>wget https://s3.eu-central-1.amazonaws.com/spark-notebook/tgz/spark-notebook-master-scala-2.10.4-spark-1.5.1-hadoop-2.6.0-cdh5.4.2.tgz</code></li>
+<li>unzip it: <code>tar -xvf spark-notebook-master-scala-2.10.4-spark-1.5.1-hadoop-2.6.0-cdh5.4.2.tgz</code></li>
+<li>test that it works: <code>./bin/spark-notebook</code></li>
+</ul>
+<p>The catch is that you'll want to view it on a browser, but you're working on a server. </p>
+<h3 id="step-eight-deployment">Step Eight: Deployment</h3>
+<p>While it is easy to deploy, at least for quick testing purposes, with <code>sudo ./bin/spark-notebook -Dhttp.port=80</code>, this will leave your Spark Notebook wide open to the world. As you've got read/write privileges, unless you really don't care about your machine or your data, this isn't the best way.</p>
+<p>Instead, open an SSH tunnel to your instance. You'll need to reconnect using <code>ssh</code>. The following command should establish a tunnel from the remote localhost:9000 to your local localhost:9000.</p>
+<p><code>ssh -i macpro.key ubuntu@MYIPADDRESS -L 9000:127.0.0.1:9000</code></p>
+<p>Once in, deploy your Spark Notebook by running</p>
+<p><code>sudo ./bin/spark-notebook -Dhttp.port=9000</code> from your spark-notebook directory (in my case, that is <code>~/spark-notebook-0.6.2-SNAPSHOT-scala-2.10.4-spark-1.5.1-hadoop-2.6.0-cdh5.4.2</code>).</p>
+<p>On your local browser, point it to <code>localhost:9000</code>. You should see your spark-notebook!</p>
+<p><img alt="the spark notebook in action" src="https://raw.githubusercontent.com/ianmilligan1/WAHR/master/images/Spark-Notebook-Cluster.png" /></p>
+<h3 id="step-nine-tweaking">Step Nine: Tweaking</h3>
+<p>You might find that your jobs are taking too long. This might because you don't have enough executors set. </p>
+<p>Find how many CPU cores you have free by running <code>htop</code>. On a lightweight cloud machine, you might see:</p>
+<p><img alt="four cores in action" src="https://raw.githubusercontent.com/ianmilligan1/WAHR/master/images/four-cores.png" /></p>
+<p>This shows four cores in action. So when you run your <code>spark-shell</code> as in Step Six above, you might want to pass <code>--num-executors 4</code>. Tweak and refine as needed.</p>
+<h3 id="step-ten-have-fun">Step Ten: Have Fun</h3>
+<p>You've now got warcbase running in the cloud. What more could a person want?</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

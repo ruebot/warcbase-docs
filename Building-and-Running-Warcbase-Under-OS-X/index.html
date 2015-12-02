@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Building and Running Warcbase Under OS X - Warcbase Documentation</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Warcbase Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="..">Summary</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apache Spark <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Spark-Analysis-of-Site-Link-Structure/">Analysis of Site Link Structure</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Collection-Analytics/">Collection Analytics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Extracting-Domain-Level-Plain-Text/">Extracting Domain Level Plain Text</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark-Named-Entity-Recognition/">Named Entity Recognition</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-Installing-Spark-Notebook-on-a-Cloud-Computer/">Installing Spark Notebook on a Cloud Computer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Spark:-NER-Visualization/">NER Visualization</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Web-Archives-2015:-Playing-with-Spark/">Web Archives 2015: Playing with Spark</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation and Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="./">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Ingesting-Content-into-HBase/">Ingesting Content into HBase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Installing-and-Running-Spark-under-OS-X/">Installing and Running Spark under OS X</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Warcbase <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Warcbase-Wayback-Integration/">Warcbase Wayback Integration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Warcbase-Java-Tools/">Warcbase Java Tools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../Shine:-Installing-Shine-Frontend-on-OS-X/">Shine: Installing Shine Frontend on OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Building-Lucene-Indexes-Using-Hadoop/">Building Lucene Indexes Using Hadoop</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Building and Running Warcbase Under OS X</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">Gephi: Converting Site Link Structure into Dynamic Visualization</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../Building-Lucene-Indexes-Using-Hadoop/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Gephi:-Converting-Site-Link-Structure-into-Dynamic-Visualization/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/lintool/warcbase-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#prerequisites">Prerequisites</a></li>
+        
+    
+        <li class="main "><a href="#building-warcbase">Building Warcbase</a></li>
+        
+    
+        <li class="main "><a href="#ingesting-content">Ingesting content</a></li>
+        
+    
+        <li class="main "><a href="#run-and-test-the-warcbrowser">Run and test the WarcBrowser</a></li>
+        
+    
+        <li class="main "><a href="#openwayback-integration">OpenWayback Integration</a></li>
+        
+    
+        <li class="main "><a href="#analytics">Analytics</a></li>
+        
+            <li><a href="#building-the-url-mapping">Building the URL mapping</a></li>
+        
+            <li><a href="#extracting-the-webgraph">Extracting the webgraph</a></li>
+        
+            <li><a href="#extracting-a-site-level-webgraph">Extracting a site-level webgraph</a></li>
+        
+            <li><a href="#other-analysis-tools">Other analysis tools</a></li>
+        
+            <li><a href="#pig-integration">Pig integration</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Warcbase is a web archive <em>platform</em>, not a single program. Its capabilities comprise two main categories:</p>
+<ol>
+<li>Analysis of web archives using the <a href="http://pig.apache.org/">Pig</a> programming language, and assorted helper scripts and utilities</li>
+<li>Web archive database management, with support for the <a href="http://hbase.apache.org/">HBase</a> distributed data store, and <a href="https://github.com/iipc/openwayback/wiki">OpenWayback</a> integration providing a friendly web interface to view stored websites</li>
+</ol>
+<p>One can take advantage of the analysis tools (1) without bothering with the database management aspect of Warcbase -- in fact, most digital humanities researchers will probably find the former more useful. Users who are only interested in the analysis tools need only be concerned with the first two sections of this document (Prerequisites and Building Warcbase).</p>
+<p>(This document was written because installing Warcbase under OS X requires a number of minor changes to the <a href="https://github.com/lintool/warcbase">official project instructions</a>.)</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><a href="http://www.cnet.com/how-to/install-command-line-developer-tools-in-os-x/">OS X Developer Tools</a></li>
+<li><a href="http://brew.sh">Homebrew</a></li>
+<li>Maven (<code>brew install maven</code>)</li>
+<li>Hadoop (<code>brew install hadoop</code>)</li>
+<li>
+<p>HBase (<code>brew install hbase</code>)</p>
+<p>Configure HBase by making the changes to the following files located in the HBase installation directory, which will be something like <code>/usr/local/Cellar/hbase/0.98.6.1/libexec/</code> (depending on the version number).</p>
+<ul>
+<li><code>conf/hbase-site.xml</code>:
+Insert within the <configuration></configuration> tags
+<property>
+    <name>hbase.rootdir</name>
+    <value>file:///Users/yourname/hbase</value>
+</property>
+<property>
+    <name>hbase.zookeeper.property.dataDir</name>
+    <value>/Users/yourname/zookeeper</value>
+</property></li>
+</ul>
+<p>Where <code>yourname</code> is your username. Feel free to choose other directories to store these files, used by HBase and its ZooKeeper instance, if you like. <em>HBase will create these directories. If they already exist, they will cause problems later on.</em></p>
+<ul>
+<li><code>conf/hbase-env.sh</code>: Look for the following line,
+      export HBASE_OPTS="-XX:+UseConcMarkSweepGC"</li>
+</ul>
+<p>and change it to:</p>
+<pre><code>  export HBASE_OPTS="-XX:+UseConcMarkSweepGC -Djava.security.krb5.realm=-Djava.security.krb5.kdc="
+</code></pre>
+<p>Verify that HBase is installed correctly by running the HBase shell:</p>
+<pre><code>$ hbase shell
+
+hbase(main):001:0&gt; list
+
+// Some lines of log messages
+
+0 row(s) in 1.3060 seconds
+
+=&gt; []
+
+hbase(main):002:0&gt; exit
+</code></pre>
+</li>
+<li>
+<p>Tomcat (<code>brew install tomcat</code>) <em>(Only necessary for OpenWayback integration; skip otherwise)</em> </p>
+</li>
+<li>
+<p>Pig (<code>brew install pig</code>)</p>
+</li>
+</ul>
+<blockquote>
+<p><strong><em>N.B.</em></strong> If you run an automatic Homebrew system update (<code>brew update &amp;&amp; brew upgrade</code>) it is possible a new version of Hadoop, HBase, or Tomcat will be installed. The previous version will remain on your system, but the symbolic links in <code>/ur/local/bin/</code> will point to the new version; i.e., it is the new version that will be executed when you run any of the software's components, unless you specify the full pathname. There are two solutions:
+1. Re-configure the new version of the updated software according to the instructions above.
+2. Make the symbolic links point to the older version of the updated software, with the command <code>brew switch &lt;formula&gt; &lt;version&gt;</code>. E.g., <code>brew switch hbase 0.98.6.1</code>.</p>
+</blockquote>
+<h3 id="building-warcbase">Building Warcbase</h3>
+<p>To start, you will need to clone the Warcbase Git repository:</p>
+<pre><code>$ git clone http://github.com/lintool/warcbase.git
+</code></pre>
+<p>From inside the root directory <code>warcbase</code>, build the project:</p>
+<pre><code>$ mvn clean package appassembler:assemble -DskipTests
+</code></pre>
+<p>If you leave off <code>-DskipTests</code>, the build may fail when it runs tests due to a shortage of memory. If you try the build with the tests and this happens, don't worry about it. </p>
+<p>Because OS X is not quite case sensitive (it does not allow two files or directories spelled the same but for case), you must remove one file from the JAR package:</p>
+<pre><code>$ zip -d target/warcbase-0.1.0-SNAPSHOT-fatjar.jar META-INF/LICENSE
+</code></pre>
+<h3 id="ingesting-content">Ingesting content</h3>
+<p>To ingest a directory of web archive files (which may be GZip-compressed, e.g., webcollection.arc.gz), run the following from inside the <code>warcbase</code> directory. </p>
+<pre><code>$ start-hbase.sh
+$ export CLASSPATH_PREFIX="/usr/local/Cellar/hbase/0.98.6.1/libexec/conf/"
+$ sh target/appassembler/bin/IngestFiles -dir /path/to/webarchive/files/ -name archive_name -create -gz
+</code></pre>
+<p>Change as appropriate the HBase configuration path (version number), the directory of web archive files, and the archive name. Use the option <code>-append</code> instead of <code>-create</code> to add to an existing database table. Note the <code>-gz</code> flag: this changes compression method to Gzip from the default Snappy, which is unavailable as a native Hadoop library on OS X. (The above commands assume you are using a shell in the <code>bash</code> family.)</p>
+<p><em>Tip</em>: To avoid repeatedly setting the CLASSPATH_PREFIX variable, add the <code>export</code> line to your <code>~/.bash_profile</code> file.</p>
+<p>If you wish to shut down HBase, the command is <code>stop-hbase.sh</code>. You can check if HBase is running with the command <code>jps</code>; if it is running you will see the process <code>HMaster</code> listed. You can also view detailed server status information at http://localhost:60010/.</p>
+<h3 id="run-and-test-the-warcbrowser">Run and test the WarcBrowser</h3>
+<p>You may now view your archived websites through the WarcBrowser interface.</p>
+<pre><code># Start HBase first, if it isn't already running:
+$ start-hbase.sh
+# Set CLASSPATH_PREFIX, if it hasn't been done this terminal session:
+$ export CLASSPATH_PREFIX="/usr/local/Cellar/hbase/0.98.6.1/libexec/conf/"
+# Start the browser:
+$ sh target/appassembler/bin/WarcBrowser -port 8079
+</code></pre>
+<p>You can now use <code>http://localhost:8079/</code> to browse the archive. For example:
+<em> <code>http://localhost:8079/archive_name/*/http://mysite.com/</code> will give you a list of available versions of <code>http://mysite.com/</code>.
+</em> <code>http://localhost:8079/archive_name/19991231235959/http://mysite.com/</code> will give you the record of <code>http://mysite.com/</code> just before Y2K.</p>
+<h3 id="openwayback-integration">OpenWayback Integration</h3>
+<p>For a more functional, visually-appealing interface, you may install a custom version of the Wayback Machine. </p>
+<p>Assuming Tomcat is installed, start it by running:</p>
+<pre><code>$ catalina start
+</code></pre>
+<p>Install OpenWayback by downloading the latest binary release <a href="https://github.com/iipc/openwayback/wiki/How-to-install">here</a>. Extract the .tar.gz; inside it there will be a web application file <code>openwayback-(version).war</code>. Copy this file into the <code>webapps</code> folder of Tomcat, something like <code>/usr/local/Cellar/tomcat/8.0.17/libexec/webapps/</code>, and rename it <code>ROOT.war</code>. Tomcat will immediately unpack this file into the <code>ROOT</code> directory.</p>
+<p><em>If you are running a current version of Tomcat (i.e., version 8) in combination with OpenWayback 2.0.0, edit the file <code>webapps/ROOT/WEB-INF/web.xml</code> and insert a slash ("/") in front of the paths of parameters <code>logging-config-path</code> and <code>config-path</code>. (<a href="https://github.com/iipc/openwayback/issues/196">Details</a>) Future releases of OpenWayback should already include this configuration change.</em></p>
+<p>Add the Warcbase jar file to the Wayback installation, by copying <code>target/appassembler/repo/org/warcbase/warcbase/0.1.0-SNAPSHOT/warcbase-0.1.0-SNAPSHOT.jar</code> from the Warcbase build directory into Tomcat's <code>webapps/ROOT/WEB-INF/lib/</code>. </p>
+<p>Into <code>webapps/ROOT/WEB-INF</code> copy Warcbase's <code>src/main/resources/BDBCollection.xml</code>. In <code>BDBCollection.xml</code>, replace <code>HOST</code>, <code>PORT</code>, and <code>TABLE</code> with <code>localhost</code>, <code>8079</code>, and <code>archive_name</code> (or whatever the archive table in HBase is called).</p>
+<p>Restart Tomcat:</p>
+<pre><code>$ catalina stop
+$ catalina start
+</code></pre>
+<p>Now, navigate to http://localhost:8080/wayback/ and access one of your archived web pages through the Wayback interface.</p>
+<h2 id="analytics">Analytics</h2>
+<p>Warcbase is useful for managing web archives, but its real power is as a platform for processing and analyzing the archives in its database. Its analysis tools are still under development, but at the moment you can use the tools described below, including the <em>pig</em> scripting interface.</p>
+<h3 id="building-the-url-mapping">Building the URL mapping</h3>
+<p>Most of the tools that follow require a URL mapping file, which maps every URL in a set of ARC/WARC files to a unique integer ID. There are two ways of doing this; the first is simpler:</p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar org.warcbase.data.UrlMappingMapReduceBuilder -input /path/to/webarc/files -output fst.dat
+</code></pre>
+<p>If this does not work due to a lack of memory, try the following steps:</p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar org.warcbase.analysis.ExtractUniqueUrls -input /path/to/webarchive/files -output urls
+</code></pre>
+<p>(If you have configured HBase to run in distributed mode rather than in standalone mode, which is the configuration provided above, you must now copy the <code>urls</code> directory out of HDFS into the local filesystem.)</p>
+<p>Next:</p>
+<pre><code>$ sh target/appassembler/bin/UrlMappingBuilder -input /path/to/urls -output fst.dat
+</code></pre>
+<p>We can examine the FST data with the following utility program:</p>
+<pre><code># Lookup by URL, fetches the integer id
+$ sh target/appassembler/bin/UrlMapping -data fst.dat -getId http://www.foo.com/
+# Lookup by id, fetches the URL
+$ sh target/appassembler/bin/UrlMapping -data fst.dat -getUrl 42
+# Fetches all URLs with the prefix
+$ sh target/appassembler/bin/UrlMapping -data fst.dat -getPrefix http://www.foo.com/
+</code></pre>
+<p>(If you are running in distributed mode, now copy the <code>fst.dat</code> file into the HDFS, so it is accessible to the cluster:</p>
+<pre><code>$ hadoop fs -put fst.dat /hdfs/path/
+</code></pre>
+<p>)</p>
+<blockquote>
+<p>You might have noticed, we are working here with ARC/WARC files and not tables in HBase. The same is done below as well. This is because most of the tools described her and below do not yet have HBase support.</p>
+</blockquote>
+<h3 id="extracting-the-webgraph">Extracting the webgraph</h3>
+<p>We can use the mapping data from above to extract the webgraph, with a Hadoop program:</p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar org.wa
+rcbase.analysis.graph.ExtractLinksWac -hdfs /path/to/webarchive/files -output output -urlMapping fst.dat
+</code></pre>
+<p>The <code>-hdfs</code> flag is misleading; if HBase is running in standalone mode, this flag should specifiy a local path. </p>
+<p>The resulting webgraph will appear in the <code>output</code> directory, in one or more files with names like <code>part-m-00000</code>, <code>part-m-00001</code>, etc.</p>
+<h3 id="extracting-a-site-level-webgraph">Extracting a site-level webgraph</h3>
+<p>Instead of extracting links between individual URLs, we can extract the site-level webgraph by aggregating all URLs with common prefix into a "supernode". Link counts between supernodes represent the total number of links between individual URLs. In order to do this, the following input files are needed:
+<em> a CSV prefix file providing URL prefixes for each supernode (comma-delimited: ID, URL prefix). The first line of this file is ignored (reserved for headers). The URL prefix is a simple string representing a site, e.g., <code>http://cnn.com/</code>. The ID should be unique (I think), so take not of the total number of unique URLs extracted when building the URL mapping above, and make sure your IDs are larger than this.
+</em> an FST mapping file to map individual URLs to unique integer ids (from above)</p>
+<p>Then run this MapReduce program:</p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar org.warcbase.data.ExtractSiteLinks -hdfs /path/to/webarchive/files -output output -numReducers 1 -urlMapping fst.dat -prefixFile prefix.csv
+</code></pre>
+<h3 id="other-analysis-tools">Other analysis tools</h3>
+<p>The tools described in this section are relatively simple. Some can process ARC and/or WARC files, while others exist in ARC and WARC versions.</p>
+<p>There are three counting tools. They count different content-types, crawl-dates, and urls:</p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar  org.warcbase.analysis.CountArcContentTypes -input /arc/files/ -output contentTypes
+
+$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar  org.warcbase.analysis.CountArcCrawlDates -input /arc/files/ -output crawlDates
+
+$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar  org.warcbase.analysis.CountArcUrls -input ~/arc/files/ -output urls
+</code></pre>
+<p>For WARC files, replace "Arc" with "Warc" in the class names (e.g., <code>org.warcbase.analysis.CountArcContentTypes</code> becomes <code>org.warcbase.analysis.CountWarcContentTypes</code>).</p>
+<p>There is a tool to extract unique URLs:</p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar org.warcbase.analysis.ExtractUniqueUrls -input /arc/or/warc/files -output uniqueUrls
+</code></pre>
+<p>There is a pair of tools to find URLs, according to a regex pattern. </p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar  org.warcbase.analysis.FindArcUrls -input /arc/files/ -output foundUrls -pattern "http://.*org/.*"
+
+$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar  org.warcbase.analysis.FindWarcUrls -input /warc/files/ -output foundUrls -pattern "http://.*org/.*"
+</code></pre>
+<p>There is a tool to detect duplicates in the HBase:</p>
+<pre><code>$ sh target/appassembler/bin/DetectDuplicates -name table
+</code></pre>
+<p>There is also a web graph tool that pulls out link anchor text (background: https://github.com/lintool/warcbase/issues/8). </p>
+<pre><code>$ hadoop jar target/warcbase-0.1.0-SNAPSHOT-fatjar.jar  org.warcbase.analysis.graph.InvertAnchorText -hdfs /arc/or/warc/files -output output -numReducers 1 -urlMapping fst.dat
+</code></pre>
+<p>For all of these tools that employ a URL mapping, you must use the FST mapping generated for the set of data files you are analyzing.</p>
+<h3 id="pig-integration">Pig integration</h3>
+<p>Warcbase comes with Pig integration for manipulating web archive data. Pig scripts may be run from the interactive Grunt shell (run <code>pig</code>), or, more conveniently, from a file (e.g., <code>pig -f extractlinks.pig</code>).</p>
+<p>The following script extracts links:</p>
+<pre><code>register 'target/warcbase-0.1.0-SNAPSHOT-fatjar.jar';
+
+DEFINE ArcLoader org.warcbase.pig.ArcLoader();
+DEFINE ExtractLinks org.warcbase.pig.piggybank.ExtractLinks();
+
+raw = load '/path/to/arc/files' using ArcLoader as
+  (url: chararray, date: chararray, mime: chararray, content: bytearray);
+
+a = filter raw by mime == 'text/html';
+b = foreach a generate url, FLATTEN(ExtractLinks((chararray) content));
+
+store b into '/output/path/';
+</code></pre>
+
+<p>In the output directory you should find data output files with source URL, target URL, and anchor text.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
